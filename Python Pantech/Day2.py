@@ -45,3 +45,24 @@ print(8==9)
 print(4==4 and 3<7)
 print(5==5 or 1>10)
 
+#Swap without variables
+x=10
+y=5
+x=x+y
+y=x-y
+x=x-y
+print("After swapping: x=%d y=%d"%(x,y))
+
+#Strings
+c="sun"+" "+"shines"
+print(c)
+
+a="beautiful"
+b="garden"
+c=a+b
+print(c)
+
+a="beautiful"
+b="garden"
+c=a+" "+b
+print(c)
