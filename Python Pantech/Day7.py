@@ -22,7 +22,7 @@ for character in 'Welcome To Advanced Python Programming':
 print(List)
 
 """
-    In the context of data storage,serialization is the process of translating data strutures or object state into a format that can be stored(e.g.in a memory buffer)or transmitted and reconstructed later.
+In the context of data storage,serialization is the process of translating data strutures or object state into a format that can be stored(e.g.in a memory buffer)or transmitted and reconstructed later.
 
 In serialization,an object is transforemd into a format that can be stored,so as to be able to deserialize it later and recreate the original object from the serialized format.
 
@@ -32,15 +32,15 @@ Unpicking is the reverse opearation,whereby a byte stream is converted back into
 
 Pickle is operationally simplest way to store the object.
 
-Python Pickle module is an object-oriented way to store objects directly in a special storae format.
+Python Pickle module is an object-oriented way to store objects directly in a special storage format.
 
 WHAT PICKLE CAN DO?
 Pickle can store and reproduce dictionaries and lists very easily.
-Stores object attributes and restores them back to same State.
+Stores object attributes and restores them back to same state.
 
 WHAT PICKLE CAN'T DO?
 It doesnot save an object's code.Only its attributes values.
-It cannot store file handles or connection sockets
+It cannot store file handles or connection sockets/
 
 The pickle interface provides four different methods:
 1.dump():It serializes to an open file(file-like object)
