@@ -34,3 +34,19 @@ print(add_15(10))
 def hello_decorator():
     print("Gfg")
 hello_decorator=gfg_decorator(hello_decorator)'''
+
+import time
+import math
+#decorator to calculate duration taken by any function
+def calculate_time(func):
+    def inner1(*args,**kwargs):
+        begin=time.time()
+        func(*args,**kwargs)
+        end=time.time()
+        print("Total time taken in : ",func.__name__,end - begin)
+    return inner1
+@calculate_time
+def factorial(num):
+    time.sleep(2)
+    print(math.factorial(num))
+factorial(10)
