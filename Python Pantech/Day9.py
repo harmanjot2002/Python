@@ -17,7 +17,7 @@ def greet(func):
 greet(shout)
 greet(whisper)
 
-#Returning function from another function
+#3.Returning function from another function
 def create_adder(x):
     def adder(y):
         return x+y
@@ -25,3 +25,12 @@ def create_adder(x):
 
 add_15=create_adder(15)
 print(add_15(10))
+
+#4.Functions are taken as the argument into another function and then called inside the wrapper function.
+# @gfg_decorator
+# def hello_decorator():
+#     print("Gfg")
+'''Above code is equivalent to-
+def hello_decorator():
+    print("Gfg")
+hello_decorator=gfg_decorator(hello_decorator)'''
