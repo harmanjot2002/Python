@@ -16,6 +16,7 @@ for value in simpleGeneratorFun():
 
 # Generator functions return a generator object.
 # Generator objects are used either by calling the next method on the generator object or using the generator object in a "for in" loop.
+#Python Generator functions allow you to declare a function that behaves likes an iterator, allowing programmers to make an iterator in a fast, easy, and clean way.
 
 # Iterting over the generator object using "next"
 x=simpleGeneratorFun()
