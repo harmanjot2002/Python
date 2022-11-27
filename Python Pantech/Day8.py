@@ -10,8 +10,7 @@ def f(a,b,c,x):
 g=partial(f,3,1,4)
 print(g(5))
 
-#In this,we have pre-filled our function with some 
-#constant values of a,b,c and g() takes single arg(x)
+#In this,we have pre-filled our function with some constant values of a,b,c and g() takes single arg(x)
 
 from functools import *
 
@@ -24,18 +23,20 @@ print(add_part(3))
 #Nested Functions
 def outerFunction(text):
     text=text
-def innerFunction():
-    print(text)
+    def innerFunction():
+        print(text)
     innerFunction()
 if __name__=='__main__':
     outerFunction('Hey!')
 
 #Closures
 #A closure allows the function to access those captures variables through the closure's copies of their values of references,even when function is invoked outside their scope.
+#Closures help to invoke functions outside their scope.
+#
 
 def outerFunction(text):
     text=text
-    def innerFuntion():
+    def innerFunction():
         print(text)
     return innerFunction
 if __name__=="__main__":
