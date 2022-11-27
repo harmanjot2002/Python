@@ -1,8 +1,8 @@
 # package is a folder containing one or more modules.
 # Use of __init__.py:
-#     Python interpreter recognizes a folder as a package if it contains __init__.py file.
-#     __init__.py exposes specfied resources from its modules to be imported.
-#     An empty __init__.py file makes all functions from the above modules available when this package is imported.
+# Python interpreter recognizes a folder as a package if it contains __init__.py file.
+# __init__.py exposes specfied resources from its modules to be imported.
+#An empty __init__.py file makes all functions from the above modules available when this package is imported.
 
 # generator function is similar to normal functions,but whenever it needs to generate a value,it does so with yield keyword rather than return keyword. 
 
