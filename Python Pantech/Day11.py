@@ -11,7 +11,7 @@
 #Anaconda is a open-source python distribution for scipy.
 #It is available for linux and mac.
 #Higher dimensional data structure is a container of lower dimensional data structure.
-#Data-Frame is a container of series and panel is a container of data frame.
+#Data-Frame is a container of series and panel is a container of data frame.It is a heterogenous collection of data elements and size of table can be changed.It is a 2D labelled size-mutable tabular data structure.
 #Series-It is a one-dimensional collection of similar elements.Series is nothing,but a collection of integers.
     #1.Collection of cimilar elements.
     #2.Size cannot be changed(immutable)
