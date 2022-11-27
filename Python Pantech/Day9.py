@@ -8,4 +8,11 @@ print(shout("Hello"))
 yell=shout
 print(yell("Hello"))
 
-
+#2.Passing function as an argument to another function
+def whisper(text):
+    return text.lower()
+def greet(func):
+    greeting=func("""Hi I am created by a function passed as an argument""")
+    print(greeting)
+greet(shout)
+greet(whisper)
