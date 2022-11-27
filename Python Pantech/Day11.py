@@ -16,3 +16,17 @@
     #1.Collection of cimilar elements.
     #2.Size cannot be changed(immutable)
     #3.Values of data can be changed(mutable)
+import pandas as pd
+import numpy as np
+# print(pd.show_versions())
+s=pd.Series()
+print(s)
+data=np.array(['a','b','c','d'])
+# s=pd.Series(data)
+s=pd.Series(data,index=[10,11,12,13])
+print(s)
+
+#Dictionary keys are used to construct index
+dic1={'a':5.,'b':6.,'c':10.}
+ser3=pd.Series(dic1)
+print(ser3)
